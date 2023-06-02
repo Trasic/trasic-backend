@@ -10,7 +10,8 @@
     },
     "rules": {
         "no-console": "off",
-        "import/no-unresolved": 0
+        "import/no-unresolved": 0,
+        "linebreak-style": ["error", "windows"]
     },
     "settings": {
         "import/resolver": {
