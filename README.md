@@ -7,8 +7,6 @@ Trasic is an Indonesian traditional music education app that aims to introduce u
 
 The backend of the Trasic application is built using Node.js and the Express.js framework. The backend is responsible for providing the API used by the frontend application to access and manipulate Indonesian traditional music data.
 
----
-
 ## Setup and Installation
 
 1. Make sure Node.js is installed on your computer. You can download it from the official [Node.js](https://nodejs.org/) website.
@@ -34,5 +32,3 @@ The backend of the Trasic application is built using Node.js and the Express.js 
 ```
 
 The server will run at `http://localhost:8080`.
-
----
