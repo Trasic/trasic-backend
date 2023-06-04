@@ -2,9 +2,9 @@ import mysql from 'mysql';
 
 // Membuat koneksi ke database MySQL
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: '34.101.179.35',
   user: 'root',
-  password: '',
+  password: 'root',
   database: 'trasic_db',
 });
 

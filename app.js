@@ -5,7 +5,7 @@ import Login from './controllers/Login.js';
 import Users from './controllers/Users.js';
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Menggunakan body-parser untuk membaca data POST dalam format JSON
 app.use(bodyParser.json());
