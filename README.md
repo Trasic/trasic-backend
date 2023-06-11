@@ -31,4 +31,4 @@ The backend of the Trasic application is built using Node.js and the Express.js 
   npm start
 ```
 
-The server will run at `http://localhost:8080`.
+The server will run at `http://localhost:3000`.

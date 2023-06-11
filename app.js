@@ -3,9 +3,10 @@ import bodyParser from 'body-parser';
 import Register from './controllers/Register.js';
 import Login from './controllers/Login.js';
 import Users from './controllers/Users.js';
+import Trasic from './controllers/Trasic.js';
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // Menggunakan body-parser untuk membaca data POST dalam format JSON
 app.use(bodyParser.json());
@@ -23,6 +24,9 @@ app.use('/login', Login);
 
 // Menggunakan controller untuk endpoint "/users"
 app.use('/users', Users);
+
+// Menggunakan controller untuk endpoint "/trasic"
+app.use('/trasic', Trasic);
 
 // Menjalankan server
 app.listen(port, () => {
