@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // Endpoint utama "/"
 app.get('/', (req, res) => {
-  res.send('Selamat datang di aplikasi Express.js');
+  res.send('Selamat datang di aplikasi Trasic');
 });
 
 // Menggunakan controller untuk endpoint "/register"
