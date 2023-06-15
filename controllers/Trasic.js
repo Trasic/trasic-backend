@@ -18,11 +18,11 @@ router.get('/', (req, res) => {
 
 // Endpoint "/trasic" untuk membuat trasic baru
 router.post('/', (req, res) => {
-  const { name, region, description, demo, picture } = req.body;
+  const { name, region, description, sound, picture } = req.body;
 
   db.query(
-    'INSERT INTO trasic (name, region, description, demo, picture) VALUES (?, ?, ?, ?, ?)',
-    [name, region, description, demo, picture],
+    'INSERT INTO trasic (name, region, description, sound, picture) VALUES (?, ?, ?, ?, ?)',
+    [name, region, description, sound, picture],
     (err) => {
       if (err) {
         res.status(500).json({
@@ -59,11 +59,11 @@ router.get('/:id', (req, res) => {
 // Endpoint "/trasic/:id" untuk memperbarui trasic berdasarkan ID
 router.put('/:id', (req, res) => {
   const { id } = req.params;
-  const { name, region, description, demo, picture } = req.body;
+  const { name, region, description, sound, picture } = req.body;
 
   db.query(
-    'UPDATE trasic SET name = ?, region = ?, description = ?, demo = ?, picture = ? WHERE trasic_id = ?',
-    [name, region, description, demo, picture, id],
+    'UPDATE trasic SET name = ?, region = ?, description = ?, sound = ?, picture = ? WHERE trasic_id = ?',
+    [name, region, description, sound, picture, id],
     (err, results) => {
       if (err) {
         res.status(500).json({
