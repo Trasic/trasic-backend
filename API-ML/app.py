@@ -6,8 +6,6 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 import tempfile
-from firebase_admin import credentials, firestore, initialize_app
-from google.cloud import storage
 
 app = Flask(__name__)
 
@@ -15,24 +13,6 @@ labels = ['Angklung', 'Arumba', 'Calung', 'Jengglong','Kendang']
 labels2 = ['Alat Musik', 'Random']
 model = load_model("./Model.h5")
 model2 = load_model("./Model2.h5")
-# Firebase
-cred = credentials.Certificate("./fbaccount.json")
-initialize_app(cred)
-db = firestore.client()
-trasic_ref = db.collection('trasic_item')
-
-
-# GCS
-storage_client = storage.Client.from_service_account_json('./gcsaccount.json')
-bucket_name = 'trasic-database'
-bucket = storage_client.get_bucket(bucket_name)
-
-@app.after_request
-def add_cors_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Access-Control-Allow-Methods'] = 'POST'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
-    return response
 
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -81,44 +61,6 @@ def predict():
     else:
         return jsonify({"message": "Instrument not found"})
 
-@app.route('/trasiclist', methods=['POST'])
-def read_trasic():
-    # read all trasic items
-    docs = trasic_ref.stream()
-    if docs:
-        results = []
-        for doc in docs:
-            data = doc.to_dict()
-            results.append(data)
-        return jsonify(results)
-    else:
-        return jsonify({'message': 'Document not found'})
-    
-@app.route('/trasicone', methods=['POST'])
-def read_trasic_one():
-    #red one of trasic item based on id
-    field_id = request.form.get('field_id')
-    
-    try:
-        field_id = int(field_id)
-    except ValueError:
-        return jsonify({'message': 'Parameter must Integer'})
-    
-    if field_id:
-        query = trasic_ref.where('id', '==', field_id).limit(1)
-        docs = query.stream()
-
-        result = []
-        for doc in docs:
-            result = doc.to_dict()
-            break
-
-        if result:
-            return jsonify(result)
-        else:
-            return jsonify({'message': 'Document not found'})
-    else :
-        return jsonify({'message': 'Parameter not found'})
-
 if __name__ == '__main__':
-    app.run(port=int(os.environ.get("PORT", 8080)), host='0.0.0.0', debug=True)
+     app.run(port=int(os.environ.get("PORT", 8080)), host='0.0.0.0', debug=True)
+    # app.run(host='0.0.0.0', PORT=8080,  debug=True)
