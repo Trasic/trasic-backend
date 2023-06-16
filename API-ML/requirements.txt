@@ -1,0 +1,11 @@
+Flask
+gunicorn
+tensorflow
+keras
+joblib
+pillow
+firebase
+firebase_admin
+google-cloud-core
+google-cloud-firestore
+google-cloud-storage

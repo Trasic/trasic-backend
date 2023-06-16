@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "trasic-capstone-project",
+  "private_key_id": "2331a8626eb7a3d59102c29f3b6d17dafa66cd57",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPhDour7eIxP1a\ntb+PV5tyk87TUHher3ViSIZXxr1GNvd4H4jdClOW5t2V897VpeP8cDPA7vV1yQsT\nhJcOEbfz7deEZ8BrUP5dAG9xlhr27kXx/vrh3SuLXKf0nwS6LnEkObcK1D5ki1tv\ndq9dwWlEQB5ZZMsZPzMZOgQbpnmAoPKUjRRdEDl9+kThBe/tHODE8zG/37vpq80G\ncl04FHD+U+qScIJ/JdU1mKkvzCPbjIsjOvUU7SYp+PxCVBiIZa5c3/4oTBkM8/OU\n2Fz4MRzSxCoPehWAivgeBP3IQaGFMtBLFGMG4aSwJPzPCFeCO1/ZyUjNUJx68suo\n780BRBElAgMBAAECggEAQRfjnlBtPGA6btFTEPY0oyi9OGjmESFtq1I/ndoP9i34\ny3vs1RVPqiap/Ecer5rVXJKfkVYDthpFuK4fKgEh2EjTkUtwPtmNqIOh8ZnZxHpy\ng1ntvZrAdXsvjhqxg2tc/zWBdsqj9asHF/w9PyYTzJ5mRrlIwhcigrfBoSDDvTZu\nPdANXBK3D2t6c9g6j7+k+mSWLei/enqZhmH5EvjQ2OeqPR2kmyJoVxXyRKAW23n3\nNfdCngQ4gicy0P1wthygzRojg6v+sMt9dVdJpGH/q1z8B5ivtmEdL6iqosyMs8Nw\nzQrXeHazQaobvd1QZQ9T2cu+YJ6MVlpOgP71hCzkQwKBgQD5/M7Mb9iXH2DRbFBJ\nQZ4NPI4wFpjDplbPhGiIEfE5ZzMwkkKRbmILk7QzShrRn3SXYLQy5wbvtvgFjDyK\nMwSKmyvUReJQVDQxgFLhzHZOmshmMch68FMQHUUNbX/Uurfn2HpAt56W9HY0Hkzv\n465XOh73pwvb5YKB1nCkcFqT+wKBgQDUgewUm1Ue+kDwAwM3B7gGmGh8dYe7e+LA\n9lkqCOGDBVkchKRlmi6fBMu7HzOqa0E7K/cbebVKj+xJPYnrssP8RzY4UdXQgeEi\niThxDpT94j/tYGveusWjSnEFdms1eN5P8ZhA49wnHSDQ7AteICbFk2xGTGs7ce8F\n6B8gwaXFXwKBgEoTm8QAsJG3fp0QF4pdo1QQyaF+UK5JMBg2CDOp/W0hI44VCRzH\nNM5xakh4gRH0yjvBMCSVSPznnv8l2xqom4PnD0nLm5BqIz035Vd7muMYAqIlxl6H\nsFVqFvgvpl2HJs/Q2gkrYBcjQZOYFvxO326BjoOcQGtcyxtmS+KuWGjZAoGBAJqy\n/ga+UYgci/ttZgDAmMIMXzwDX00n0ZnBfIVyM6Dq2sU89mSUik3u8tUE0NrF+5W0\n2s3gmw5tmYhzyRyRZcUYnir/wBRrCFbY6AK9p87uzrTilYRuGQRXY9GjNEaX99bg\nvIK4ngLHXKVawKfD5hW8zXybkxCST3vQUCDLd/8nAoGAdBzWl+3DTIbjCdMotMOM\n29ibJQ/dG8GR11TFy4/qaCs9Mm6vMo5r6FWI390HLzj2ntoC4wJ7+/i07Pdq8sE+\ntZTPaP7hwBtKDp9ONmTvuV0t3uXgbLzisSOS+KIWqMZ2iJqEP7c1uaODe/DpV454\nCgIJNk0i20FSN2yGQnn+dUE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "gcc-upload-image-api@trasic-capstone-project.iam.gserviceaccount.com",
+  "client_id": "109246869132219879858",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gcc-upload-image-api%40trasic-capstone-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
