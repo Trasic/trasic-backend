@@ -4,7 +4,7 @@ Trasic is an Indonesian traditional music education app that aims to introduce u
 
 ## Backend
 
-The backend of the Trasic application is built using Node.js and the Express.js framework. The backend is responsible for providing the API used by the frontend application to access and manipulate Indonesian traditional music data.
+The backend of the Trasic application is built using python.py and the flask . The backend is responsible for providing the API used by the frontend application to predict Indonesian traditional musical instruments.
 
 ## REST API Documentation
 
